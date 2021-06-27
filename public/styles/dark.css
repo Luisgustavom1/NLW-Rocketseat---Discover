@@ -1,0 +1,41 @@
+.dark{
+    background-color: #232324;
+}
+.dark .question-wrapper{
+    background-color: #757c88;
+}
+.dark button{
+    background-color: #295fb1;
+}
+.dark h2{
+    color: #1a25b9;
+}
+.dark #question-form h2{
+    color: #1a25b9;
+}
+.dark input{
+    background-color: #677181;
+}
+.dark .button.outlined {
+    background-color: #677181;
+    color: var(--white)
+}
+
+/* modal */
+.dark .modal-wrapper .modal{
+    background-color: #232324;
+}
+.dark .question-wrapper.read{
+    background-color: rgb(117, 124, 136, .7);
+}
+.dark .modal-wrapper .modal p{
+    color: #1a25b9;
+}
+
+.dark .modal-wrapper .modal > h2{
+    color: #1a25b9;
+}
+
+.dark .modal-wrapper #formModal{
+    border: none
+}

@@ -1,0 +1,88 @@
+.content#home{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+    grid-template-areas: 'header    header'
+                         'img   conteudo';
+}
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+.darkMode img{
+    width: 4.4rem;
+    height: 4.4rem;
+    transform: rotate(-7deg);
+    padding-right: 0rem;
+}
+.imgG{
+    grid-area: img;
+    background: url('/imgs/ilustracao.svg') no-repeat top/contain;
+
+    background-position-x: -10rem;
+}
+
+.ball{
+    clip-path: circle();
+    position: fixed;
+}
+.ball.top{
+    width: 63.35rem;
+    height: 63.35rem;
+    top: -42rem;
+    left: 130.1rem;
+    background: linear-gradient(195.96deg, #5498FF -122.01%, #428EFF -8.36%, #297FFF 98.4%);
+    opacity: 0.1;
+}
+.ball.bottom{
+    width: 21.2rem;
+    height: 21.1rem;
+    background: linear-gradient(195.96deg, #5498FF -122.01%, #428EFF -8.36%, #297FFF 98.4%);
+    opacity: 0.1;
+    left: 120rem;
+    top: 69rem;
+}
+
+main{
+    grid-area: conteudo;
+    display: flex;
+    align-items: center;
+}
+main .container{
+    width: min(36.3rem, 100%);
+    margin-top: -6rem;
+}
+.container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 2.4rem;
+}
+
+.container input{
+    border: .2rem solid var(--grey-blue);
+    padding: 13px 12px 13px 16px;
+}
+
+.container .separator{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 3.1rem 0;
+}
+.container .ou{
+    margin: 0 1.35rem;
+    font-weight: 400;
+    color: var(--grey-blue);
+}
+.container .separatorRow{
+    width: 15.75rem;
+    border: 1px solid var(--grey-blue);
+}
+
+input, button, .button{
+    margin-bottom: 1.8rem;
+    width: 100%;
+}
+
